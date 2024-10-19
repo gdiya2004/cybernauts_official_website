@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+  
+  
+  
+  @font-face {
+    font-family: technopath;
+    src: url(fonts/Technopath.otf);
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 15%;
+    background-color: black;
+  }
+  
+  .navbar .navbar-nav .nav-item a {
+    padding: 30px;
+  }
+  
+  .nav-item {
+    font-size: 130%;
+    font-family: technopath;
+    margin-right: 5%;
+  }
+  
+  .nav-link {
+    color: white !important;
+  }
+  .navbar-toggler {
+    color: white !important;
+  }
+  .navbar-toggler-icon {
+    color: aliceblue !important;
+    background-color: aliceblue;
+  }
+  
+  .nav-link:hover {
+    color: #d246d2 ! important;
+    
+  }
+  
+  .navbar-brand {
+    font-family: technopath;
+  }
+
+
+
+
+
+
+
+
+
+
+/* ********************************************** */
+#VM {
+    /* height: 100vh;
+    width: 100vw;
+    min-width: 100%;
+    min-height: 100vh; */
+    height: 100vh;
+    width:100%;
+    background-color: black;
+    color: white;
+    overflow-y: hidden;
+}
+
+@font-face {
+    font-family: technopath;
+    src: url(fonts/Technopath.otf);
+}
+
+@font-face {
+    font-family: pristina;
+    src: url("fonts/pristina.ttf");
+}
+
+@font-face {
+    font-family: technical;
+    src: url("fonts/TechnicalDrawing.ttf");
+}
+
+#visionheading1 {
+    font-family: technopath;
+    /* display: flex;
+    justify-content: center; */
+    font-size: 7rem;
+    color:   linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(3,37,74,1) 100%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+    /* #52E5E7
+    #130CB7; */
+    /* background-clip:text;
+    color: transparent; */
+    /* -webkit-text-stroke: 0.1px white; */
+    margin: 0;
+    cursor:default;
+}
+.light{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:40%;
+    pointer-events: none;
+    background:radial-gradient(circle at var(--x) var(--y), transparent 5%,rgba(0,0,0,0.9) 20%) ;
+}
+
+#visionheading2 {
+    font-family: pristina;
+    display: flex;
+    justify-content: center;
+    font-weight: 1;
+    font-size: 4rem;
+    margin: 0;
+    position: relative;
+    top: -2rem;
+}
+
+.arrowvision {
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+#visionheading {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#visiontext {
+    width: 80vw;
+    padding: 0 10vw; /* Simplified padding for text */
+    font-family: technical;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 1;
+    line-height: 2;
+    /* height: 100vh; */
+    margin-top: 5vh
+}
+
+#visiontext p {
+    font-family: technical;
+}
+
+.visionarrow {
+    font-size: 1.5rem; /* Adjust arrow size as needed */
+    cursor: pointer;
+    position: relative;
+    top: 10vh;
+    font-weight: light ;
+}
+
+#visionarrow1 {
+    padding-left: 2rem; /* Adjust spacing */
+}
+
+#visionarrow2 {
+    padding-right: 2rem; /* Adjust spacing */
+}
+
+@media (min-width: 900px) {
+    #visiontext {
+        padding: 0 15vw; /* Adjust padding for larger screens */
+    }
+
+    #visionarrow1 {
+        padding-left: 10rem; /* Adjust spacing for larger screens */
+    }
+
+    #visionarrow2 {
+        padding-right: 10rem; /* Adjust spacing for larger screens */
+    }
+    #visionheading1{
+        font-size:6 rem;
+    }
+    #visionheading2{
+        font-size:6 rem;
+        top: -2rem;
+    }
+    .visionarrow{
+        font-size: 2rem;
+    }
+}
