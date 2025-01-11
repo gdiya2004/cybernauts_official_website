@@ -5,13 +5,13 @@ const mysql2=require("mysql2");
 app.listen(7700,function(req,resp){
     console.log("started the port at 7700");
 });
-app.use(express.static("public"));
-const congObj={
-    host:"127.0.0.1",
-    user:"root",
-    password:"San@1234",
-    database:"cybernauts",
-}
+// app.use(express.static("public"));
+// const congObj={
+//     host:"127.0.0.1",
+//     user:"root",
+//     password:"San@1234",
+//     database:"cybernauts",
+// }
 
 app.get("/",function(req,resp){
     let filepath=process.cwd()+"/public/index.html";

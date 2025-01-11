@@ -3,10 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
+    <link rel="icon" href="./photoss1/icon_img.jpg" type="image/png">
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="baani.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head><body>
+  <div class="topnav" id="myTopnav">
+    <a href="#" class="icon" onclick="myFunction()">&#9776;</a>
+    <a class="nav-link active" href="index.html">HOME</a>
+    <a class="nav-link active" href="baani.html">EVENTS</a>
+    <a class="nav-link active" href="vision.html">VISION</a>
+    <a class="nav-link active" href="arvind.html">TEAM</a>
+    <a class="nav-link active" href="ritesh.html">HEADS</a>
+    
+  </div>
 
 <div class="events_body">
     <div class="events-title">the</div>
@@ -76,19 +89,31 @@
 
             </div>
         </div>
-        <!-- <div class="container right-container">
-            <img src="3.png">
-            <div class="text-box6">
+        <div class="container right-container">
+            <img src="pictures/3.png">
+            <div class="text-box4">
                 <h1>EVENT 6</h1>
-                <p class="event_name"></p>
-                <div class="date">25-08-2023</div>
-                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veniam dolores nihil natus veritatis, nemo, necessitatibus beatae ipsum deleniti quaerat expedita perferendis, aut dignissimos corrupti voluptas illo. Vitae, provident officiis?</p>
-               <div class="evebutton"><a>See More</a></div> 
-                <span class="right-container-arrow"></span>
+                <p class="event_name">CODEHUNT</p>
+                <div class="date">20-09-2024</div>
+                <p class="content">Participants engaged in a thrilling coding hunt where they visited various locations, tackled programming challenges, provided solutions or outputs, and progressed to the next destination, combining problem-solving, teamwork, and exploration for an exciting experience.</p>
+               <!-- <div class="evebutton"><a>See More</a></div>  -->
+                <!-- <span class="right-container-arrow"></span> -->
 
             </div>
+    </div>
 
-    </div> -->
+    <div class="container left-container">
+      <div class="imgcon"></div>
+      <div class="text-box5">
+          <h1>EVENT 7</h1>
+          <p class="event_name">WEB-D & DSA</p>
+          <div class="date">18-12-2024</div>
+          <p class="content">The event featured an engaging and interactive session on Data Structures and Algorithms (DSA) and Web Development, providing valuable insights, real-world applications, and coding practices. It concluded with project assignments to reinforce learning through practical implementation and hands-on experience, encouraging creativity and problem-solving skills.</p>
+          
+          <!-- <span class="left-container-arrow"></span> -->
+
+      </div>
+  </div>
     </div>
     <!-- <div class="se"><a>See More</a><i class="fa-solid fa-arrow-right"></i></div> -->
 </div>
@@ -96,8 +121,7 @@
 
 
 
-
-<section class="prefooter">
+<section class="prefooter" id="contact-me">
   <div class="contact-us">
     <div class="left">
       <div class="chotu">
@@ -129,124 +153,142 @@
 </section>
 <section class="footer11">
   <footer>
-    <div id="imgpara">
-      <div class="logo">
-        <div id="img"></div>
-        <h3>
-          Cyber<i class="fa-solid fa-rocket"><span class="flame"></span></i
-          ><span>Nauts</span>
-        </h3>
-      </div>
+    <div class="container-pr">
+      <div class="wrapper">
+        <div class="footer-widget first">
+          <div class="logop">
+            <img
+              src="./pictures/CybernautsLogo.jpeg"
+              class="logo"
+              height="120px"
+              width="120px"
+              id="photo"
+            />
+            <h2>CYBER<span id="purp">NAUTS</span></h2>
+          </div>
+          <p class="desc">
+            At Cybernauts, members dive into workshops, seminars,
+            hackathons, and competitions, gaining new skills, sharing ideas,
+            connecting with peers and industry pros. Join us for exciting
+            events that fuel your growth and creativity!
+          </p>
+        </div>
+        <div class="footer-widget">
+          <h6>Website Links</h6>
+          <ul class="links">
+            <li><a href="/">home</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="vision.html">vision</a></li>
+            <li><a href="#diyaGallery">gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-widget">
+          <h6>Explore</h6>
+          <ul class="links">
+            <li><a href="baani.html">events</a></li>
+            <li><a href="arvind.html">team</a></li>
+            <li><a href="#contact-me">contact us </a></li>
+            <li><a href="ritesh.html">projects</a></li>
+          </ul>
+        </div>
+        <div class="footer-widget social">
+          <h6>Follow Us</h6>
+          <ul class="links social-links">
+            <li>
+              <a
+                href="https://discord.com/channels/1147565564357771324/1147565564357771326"
+                target="_blank"
+                style="text-decoration: none"
+                id="icons"
+              >
+                <i
+                  class="fa-brands fa-discord"
+                  style="font-size: 1.5vw"
+                ></i>
+                <span>Discord</span>
+              </a>
+            </li>
 
-      <div id="para">
-        <p>
-          At Cybernauts, members dive into workshops, seminars,
-          hackathons,and competitions, gaining new skills, sharing ideas,
-          connecting with peers and industry pros. Join us for exciting
-          events that fuel your growth and creativity!
-        </p>
+            <li>
+              <a
+                href="https://www.instagram.com/cybernauts_nitj/"
+                target="_blank"
+                style="text-decoration: none"
+                id="icons"
+              >
+                <i
+                  class="fa-brands fa-instagram"
+                  style="font-size: 1.75vw"
+                ></i>
+                <span>Instagram</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/cybernautsNITJ"
+                target="_blank"
+                style="text-decoration: none"
+                id="icons"
+                ><i
+                  class="fa-brands fa-github"
+                  style="font-size: 1.75vw"
+                ></i
+                ><span>Github</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/cybernauts-nitj-717a7a28a/"
+                target="_blank"
+                style="text-decoration: none"
+                id="icons"
+                ><i
+                  class="fa-brands fa-linkedin"
+                  style="font-size: 1.75vw"
+                ></i
+                ><span>Linkedin</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div id="links1">
-      <center>
-        <h5>Website Links</h5>
-        <ul>
-          <!-- <a href="" style="text-decoration: none"><li>Home</li></a>
-          <a href="" style="text-decoration: none"><li>About</li></a>
-          <a href="" style="text-decoration: none"><li>Gallery</li></a>
-          <a href="" style="text-decoration: none"><li>Faqs</li></a> -->
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Vision</a></li>
-          <li><a href="">Gallery</a></li>
-        </ul>
-      </center>
-    </div>
-    <div id="links2">
-      <center>
-        <h5>Explore</h5>
-        <ul>
-          <!-- <a href="" style="text-decoration: none"><li>events</li></a>
-          <a href="" style="text-decoration: none"><li>Contact Us</li></a>
-          <a href="" style="text-decoration: none"
-            ><li>Give Feedback</li></a
-          >
-          <a href="" style="text-decoration: none"><li>projects</li></a> -->
-          <li><a href="">Events</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Projects</a></li>
-        </ul>
-      </center>
-    </div>
-    <div id="links3">
-      <h5>Follow Us</h5>
-      <ul>
-        <li>
+      <div class="sicons">
+        <div class="icons-only">
           <a
             href="https://discord.com/channels/1147565564357771324/1147565564357771326"
-            target="_blank"
-            style="text-decoration: none"
-            id="icons"
-          >
-            <i class="fa-brands fa-discord" style="font-size: 1.75vw"></i>
-            <span>Discord</span>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://www.instagram.com/cybernauts_nitj/"
-            target="_blank"
-            style="text-decoration: none"
-            id="icons"
-          >
-            <i class="fa-brands fa-instagram" style="font-size: 2vw"></i>
-            <span>Instagram</span>
-          </a>
-        </li>
-
-        <li>
-          <a
-            href="https://github.com/cybernautsNITJ"
-            target="_blank"
-            style="text-decoration: none"
-            id="icons"
-            ><i class="fa-brands fa-github" style="font-size: 2vw"></i
-            ><span>Github</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/cybernauts-nitj-717a7a28a/"
-            target="_blank"
-            style="text-decoration: none"
-            id="icons"
-            ><i class="fa-brands fa-linkedin" style="font-size: 2vw"></i
-            ><span>Linkedin</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <center>
-      <div id="bottomline1">
-        <p>
-          "EMPOWERING THE FUTURE WITH SEAMLESS INNOVATION WHERE TECHNOLOGY
-          MEETS LIMITLESS POTENTIAL"
-        </p>
+            ><i class="fa-brands fa-discord"></i
+          ></a>
+          <a href="https://www.instagram.com/cybernauts_nitj/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/cybernautsNITJ"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/cybernauts-nitj-717a7a28a/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
       </div>
-    </center>
-    <i class="line"></i>
-    <center>
-      <div id="bottomline2">
+      <div class="copyright-wrapper">
         <p>
           Copyright <i class="fa-regular fa-copyright"></i> 2024 Cybernauts
           Society
         </p>
       </div>
-    </center>
+    </div>
   </footer>
 </section>
+<script>
+  function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
 </body>
 <script src="baani.js"></script>
 </html>

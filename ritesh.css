@@ -32,9 +32,11 @@
 .nav-link {
   color: white !important;
 }
+
 .navbar-toggler {
   color: white !important;
 }
+
 .navbar-toggler-icon {
   color: aliceblue !important;
   background-color: aliceblue;
@@ -42,7 +44,7 @@
 
 .nav-link:hover {
   color: #d246d2 ! important;
-  
+
 }
 
 .navbar-brand {
@@ -72,25 +74,29 @@
 
 
 /* ************************************************* */
-body{
+body {
   margin: 0%;
   padding: 0%;
   background: #0F0F0F;
   width: 100%;
-  height: inherit;
-  min-width: 40vw;
+  box-sizing: border-box;
 }
-.center{
+
+.center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @font-face {
   font-family: 'Pristina';
-  src: url('Pristina Regular.ttf') format('truetype');
+  src: url('./fonts/pristina.ttf') format('woff2'),
+    url('./fonts/pristina.ttf') format('woff'),
+    url('./fonts/pristina.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Technical Drawing';
   src: url('TechnicalDrawing.ttf') format('truetype');
@@ -99,13 +105,7 @@ body{
 }
 
 /* <!-- First Heading (Under the Guidance of)--> */
-
-.inline-center{
-  display: inline;
-  justify-content: center;
-  align-items: center;
-}
-.font-size4{
+.font-size4 {
   font-size: 8rem;
   color: aliceblue;
   margin: 0%;
@@ -113,15 +113,19 @@ body{
   padding-right: 1rem;
 
 }
+
 .poppins-regular-italic {
   font-family: "Poppins", sans-serif;
-  font-style: italic;
+  /* font-style: italic; */
+
 }
+
 .poppins-light-italic {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
-  font-style: italic;
+  /* font-style: italic; */
 }
+
 /* <!-- First Heading (Under the Guidance of)--> */
 
 
@@ -130,7 +134,7 @@ body{
 /* //Flipping the image of faculty when hovered */
 .faculty {
   display: grid;
-  gap: 40rem;
+  gap: 20rem;
   margin: 5% auto;
   grid-template-columns: repeat(auto-fit, minmax(1rem, 32rem));
   justify-content: space-evenly;
@@ -145,6 +149,14 @@ body{
 
 }
 
+.responsive-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
 .flipper {
   position: absolute;
   width: 100%;
@@ -153,7 +165,9 @@ body{
   transform-style: preserve-3d;
   transition: transform 1s;
 }
-.front, .back {
+
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -164,15 +178,9 @@ body{
   align-items: center;
   padding: 2rem;
 }
-.responsive-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
 
-.front {
+
+/* .front {
   transform: rotateY(0deg);
 }
 
@@ -182,46 +190,23 @@ body{
 
 .flip-container:hover .flipper {
   transform: rotateY(360deg);
+}  */
+
+.responsive-image {
+  mix-blend-mode: luminosity;
+  border-radius: 2rem;
+  margin: auto;
+  aspect-ratio: 1;
+  width: 200px;
+  height: auto;
+  border: none !important;
+  box-sizing: border-box;
+  filter: drop-shadow(5px 5px 10px rgba(232, 222, 222, 0.5));
 }
 
-.responsive-image{
-  mix-blend-mode: luminosity;
-}
-.white_text{
+.white_text {
   color: whitesmoke;
 }
-
-/* Media Queries for specific adjustments */
-@media (max-width: 1200px) {
-.responsive-image {
-max-width: 80%;
-}
-}
-
-@media (max-width: 992px) {
-.responsive-image {
-max-width: 70%;
-}
-}
-
-@media (max-width: 768px) {
-.responsive-image {
-max-width: 60%;
-}
-}
-
-@media (max-width: 576px) {
-.responsive-image {
-max-width: 50%;
-}
-}
-
-@media (max-width: 400px) {
-.responsive-image {
-max-width: 40%;
-}
-}
-
 
 /* //Flipping the image of faculty when hovered */
 /* <!-- Faculty Information --> */
@@ -237,9 +222,11 @@ max-width: 40%;
 
 
 <!-- Heading project animation --> */
-.font-size1{
-  font-size: 980%;
+.font-size1 span:first-child {
+  font-family: pristina, regular;
+  font-family: 11rem;
 }
+
 .gradient-text {
   background: linear-gradient(to right, #FFA566, #FF6E06);
   -webkit-background-clip: text;
@@ -247,38 +234,42 @@ max-width: 40%;
   background-clip: text;
   color: transparent;
 }
+
 .staatliches-regular {
-    font-family: "Staatliches", sans-serif;
-    font-style: normal;
-  }
+  font-family: "Staatliches", sans-serif;
+  font-style: normal;
+}
+
 .staatliches-regular-thin {
   font-family: "Staatliches", sans-serif;
   font-style: normal;
 }
 
-.font-size2{
-    font-size: 11rem;
-    color: aliceblue;
+.font-size2 {
+  font-size: 11rem;
+  color: aliceblue;
 }
 
-.font-size3{
-    font-size: 4rem;
-    color: azure;
-}  
+.font-size3 {
+  font-size: 2.5rem;
+  color: azure;
+}
+
 /*<!-- Heading project animation --> */
 
 
 
 
 /* <!-- Projects display --> */
-.container{
-  width:100%;
+.container {
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.projects-container{
+
+.projects-container {
   width: 100%;
   height: 100%;
   display: grid;
@@ -286,11 +277,13 @@ max-width: 40%;
   justify-content: center;
   align-items: center;
 }
-.image-box{
+
+.image-box {
   align-self: center;
   position: relative;
 }
-.project-img{
+
+.project-img {
   object-fit: cover;
   align-items: center;
   margin: 0% auto;
@@ -298,10 +291,12 @@ max-width: 40%;
   height: 100%;
   width: 100%;
 }
-:hover.image-box{
+
+:hover.image-box {
   transform: scale(1.02);
   transition: transform 0.4s;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -314,18 +309,20 @@ max-width: 40%;
   transition: .5s ease;
   background-color: #0f0f0fc7;
 }
+
 .image-box:hover .overlay {
   opacity: 1;
 }
+
 .text {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  text-shadow: rgb(255, 255, 255) 0.4px 0.4px 2px ;
+  text-shadow: rgb(255, 255, 255) 0.4px 0.4px 2px;
   font-family: Technical Drawing, regular;
 }
 
@@ -380,9 +377,10 @@ max-width: 40%;
   background-color: rgba(156, 156, 156, 0.466);
   backdrop-filter: blur(4px);
 }
+
 /*Code Button*/
 
-.extra_projects{
+.extra_projects {
   display: none;
 }
 
@@ -393,7 +391,7 @@ max-width: 40%;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: .1rem;
+  gap: 1.1rem;
   background-color: var(--clr);
   color: #fff;
   border-radius: 2.5rem;
@@ -406,9 +404,10 @@ max-width: 40%;
   transition: background-color .3s;
 }
 
-.explore_btn_size{
+.explore_btn_size {
   font-family: "Poppins", sans-serif;
 }
+
 .button__icon-wrapper {
   flex-shrink: 0;
   width: 1.75rem;
@@ -444,10 +443,12 @@ max-width: 40%;
   transition: transform .3s ease-in-out .1s;
   transform: translate(0);
 }
-.explore_btn{
-    margin-top: 1%;
-    margin-bottom: 5%;
+
+.explore_btn {
+  margin-top: 1%;
+  margin-bottom: 5%;
 }
+
 /* <!-- Explore All and Show less Button --> */
 
 
@@ -457,3 +458,249 @@ max-width: 40%;
 
 
 /* //Flipping the image of faculty when hovered */
+
+
+
+
+
+@media (max-width:2000px) {
+  .font-size1 span:first-child {
+    font-size: 11rem;
+  }
+}
+
+/* Media Queries for specific adjustments */
+@media (max-width: 1360px) {
+  .responsive-image {
+    max-width: 110%;
+  }
+
+  .faculty {
+    gap: 5rem;
+  }
+
+  .font-size1 span:first-child {
+    font-size: 10rem;
+  }
+
+  .font-size3 {
+    font-size: 2.25rem;
+  }
+
+  .text {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .responsive-image {
+    max-width: 105%;
+  }
+
+  .faculty {
+    gap: 5rem;
+  }
+
+  .font-size4 span {
+    font-size: 8rem;
+  }
+
+  .font-size1 span:first-child {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 1105px) {
+  .faculty {
+    gap: 0rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  .responsive-image {
+    max-width: 100%;
+  }
+
+  .faculty {
+    gap: 50rem;
+  }
+
+  .font-size4 span {
+    font-size: 7rem;
+  }
+
+  .font-size1 span:first-child {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-image {
+    max-width: 100%;
+  }
+
+  .faculty {
+    gap: 30rem;
+  }
+
+  .font-size4 span {
+    font-size: 6rem;
+  }
+
+  .font-size1 span:first-child {
+    font-size: 6rem;
+  }
+
+  .font-size3 {
+    font-size: 4rem;
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-image {
+    max-width: 100%;
+  }
+
+  .faculty {
+    gap: 30rem;
+  }
+
+  .font-size4 span {
+    font-size: 5rem;
+  }
+
+  .font-size1 span:first-child {
+    font-size: 5rem;
+  }
+  .text{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:480px) {
+  .font-size3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .responsive-image {
+    max-width: 100%;
+  }
+
+  .font-size4 span {
+    font-size: 3rem;
+  }
+
+  .font-size1 span:first-child {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .responsive-image {
+    max-width: 100%;
+  }
+
+  .font-size4 span {
+    font-size: 4rem;
+  }
+
+  .font-size1 span:first-child {
+    font-size: 4rem;
+  }
+}
+
+.nav-link:hover {
+  color: #d246d2 !important;
+}
+
+.topnav {
+  background-color: #000000;
+  font-family: technopath !important;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a :hover{
+  color: #d246d2;
+}
+.topnav.responsive a:hover{
+  color: #d246d2;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+ a .icon{
+  position: absolute;
+  left: 0;
+  
+ }
+ .topnav {
+  justify-content: space-evenly;
+ }
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+   
+    flex-direction: column;
+    
+  }
+  .topnav.responsive a.icon {
+   
+    background-color: black;
+    display: flex;
+   
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+    font-size: 1rem;
+    padding: 8px 12px;
+
+  }
+  
+  .topnav {
+    float: none;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}

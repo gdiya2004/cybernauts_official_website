@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: Poppins,sans-serif;
+
   box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 .events-title {
-  /* margin-top: 5vw; */
+  margin-top: 5vw;
   font-family: pristina;
   color: white;
   align-self:  center;
@@ -38,29 +38,34 @@ body{
   background-clip: text;
 
 } */
-.EVENT{
+ .events_body{
+  font-family: Poppins,sans-serif;
+ }
+ .prefooter,.footer11{
+  font-family: Poppins,sans-serif;
+ }
+ .EVENT{
   color:white;
   font-size: 5rem;
   margin-left: 25%;
   margin-top: -10%;
-  /* background: linear-gradient(180deg, rgb(241, 241, 197), white);
-  color: transparent;
-  background-clip:text; */
+  line-height: normal;
 
 }
 .EVENT span{
   color:rgb(249, 149, 0);
   font-size: 15rem;
-  margin-top: -8%;
+  margin-top: -4%;
   margin-left: 2%;
   font-family: pristina;
+  line-height: normal;
 }
 .workshops{
   color:rgb(244, 22, 192);
-  /* color: white; */
   font-size: 5rem;
   margin-left: 25%;
   margin-top: -4%;
+  line-height: normal;
 
 }
 .workshops span{
@@ -70,17 +75,11 @@ body{
   margin-left: 2%;
   font-family: pristina;
 }
-
-
-
+  
 .events_body{
   background-color: #000000;
-  /* background-image:url("https://th.bing.com/th/id/OIP.zHWdMDu779X19_WehLagqwHaEK?rs=1&pid=ImgDetMain");
-  background-repeat: no-repeat;
-  background-size: cover; */
-
-  /* color: white; */
 }
+
 .timeline{
   position: relative;
   max-width: 1200px;
@@ -123,7 +122,7 @@ body{
       transform: translateY(0);
   }
   100% {
-      transform: translateY(calc(-400%)); 
+      transform: translateY(calc(-600%)); 
   }
 }
 
@@ -153,7 +152,7 @@ body{
 }
 
 .container:nth-child(1){
-  animation-delay: 0s;
+  animation-delay: 1s;
 }
 .container:nth-child(2){
   animation-delay: 1s;
@@ -168,6 +167,9 @@ body{
   animation-delay: 1s;
 }
 .container:nth-child(6){
+  animation-delay: 1s;
+}
+.container:nth-child(7){
   animation-delay: 1s;
 }
 
@@ -213,16 +215,9 @@ body{
    box-shadow: 8px 8px 6px #A523B0, 13px 13px 6px green;
   }
   .evebutton {
-      /* margin-top: 112vh; */
+      
       width: 15vw;
-      /* border: 3px solid black; */
-      /* height: 4vh; */
-      /* border-radius: 15px; */
-      /* font-size: 17px; */
       color: rgb(11, 11, 11);
-      /* align-items: center; */
-      /* text-align: center; */
-      /* justify-content: center; */
       display: flex;
       
       
@@ -529,31 +524,9 @@ body{
 }
 
 }
-/* @media screen and (max-width: 400px){
-  .imgcon{
-      width: 5vw;
-      height: 5vw;
-      position: relative;
-      left: 0%;
-  }
-  .container img{
-      width: 12vw;
-      height: 12vw;
-      left: -35%;
-
-  }
-  .date{
-      width: 5vw;
-  }
-} */
 
 
-
-
-
-
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px)and (min-width: 400px) {
   .timeline {
       margin: 50px auto;
   }
@@ -578,9 +551,12 @@ body{
 
   .left-container img, .right-container img {
       left: 10px;
+      
   }
 
+  
   .left-container-arrow, .right-container-arrow {
+    
       border-right: 15px solid #fff;
       border-left: 0;
       left: -15px;
@@ -588,9 +564,19 @@ body{
 
   .container img {
       width: auto;
-      left: -18%;
+      left: -15%;
   }
 
+  .imgcon {
+    width: 40px;
+    height: 40px;
+    /* margin-left: 10px; */
+    /* left: -1%; */
+    background-image: url("./pictures/3.png");
+      background-size: cover;
+    position: absolute;
+  left: .5%;
+}
   .text-box1,
   .text-box3,
   .text-box5 {
@@ -639,6 +625,30 @@ body{
   .workshops span {
       font-size: 3rem;
   }
+
+  .container:nth-child(1) {
+    animation-delay: 1s;
+}
+.container:nth-child(2) {
+    animation-delay: 1.5s;
+}
+.container:nth-child(3) {
+    animation-delay: 1s;
+}
+.container:nth-child(4) {
+    animation-delay: 1.5s;
+}
+.container:nth-child(5) {
+    animation-delay: 1s;
+}
+.container:nth-child(6) {
+    animation-delay: 2s;
+}
+.container:nth-child(7) {
+    animation-delay: .5s;
+}
+
+  
 }
 
 
@@ -722,6 +732,7 @@ body{
       margin-top: -4vh;
       left: 3%;
   }
+  
 }
 
 .contact-us {
@@ -843,6 +854,7 @@ inputbox input:valid ~ i::before,
 .inputbox input:focus ~ i::before {
   left: 0;
 }
+
 @media (max-width:930px){
   .contact-us{
     display: block;
@@ -1356,3 +1368,119 @@ li {
   display: block;
 }
 /* nav */
+
+
+
+
+
+
+@media only screen and (max-width: 335px) {
+  .events-title {
+      font-size: 1.5rem;
+      margin-left: 15vw;
+      /* text-align: left; */
+  }
+
+  .EVENT {
+      font-size: 1.8rem;
+      margin-left: 15vw;
+      font-weight: bold;      
+  }
+
+  .EVENT span {
+      font-size: 4rem;
+  }
+  .container h1{
+    text-align: left;
+  }
+
+  .event_name{
+    text-align: left;
+  }
+  .workshops {
+      font-size: 1.5rem;
+      text-align: center;
+      
+      font-weight: bold;
+  }
+
+  .workshops span {
+      font-size: 1.5rem;
+      font-weight:lighter
+  }
+
+  .timeline {
+      flex-direction: column;
+  }
+
+  .container {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+      scroll-snap-align: start;         
+      animation: scroll 30s  infinite;       
+      animation-play-state: running;    
+       transition: transform 0.5s ease;  
+  }
+
+  .imgcon {
+      width: 40px;
+      height: 40px;
+      /* margin-left: 10px; */
+      /* left: -1%; */
+      position: absolute;
+    left: .5%;
+  }
+  .right-container img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: .5%;
+  }
+  .text-box1, .text-box2, .text-box3, .text-box4, .text-box5 {
+    margin-left: auto;
+      max-width:90%;
+  }
+
+  .text-box1 h1, .text-box2 h1, .text-box3 h1, .text-box4 h1, .text-box5 h1 {
+      font-size: 1.2rem;
+  }
+
+  .content {
+      font-size: 0.8rem;
+      text-align: left;
+  }
+
+  .prefooter {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .contact-us {
+      flex-direction: column;
+  }
+
+  .left {
+      margin-bottom: 20px;
+  }
+
+  .inputbox, .query-input {
+      width: 100%;
+  }
+
+  .send {
+      width: 100%;
+  }
+
+  .footer11 {
+      text-align: center;
+  }
+
+  #links1, #links2, #links3 {
+      display: block;
+      margin-bottom: 20px;
+  }
+  .container h1{
+    text-align: left;
+  }
+}
